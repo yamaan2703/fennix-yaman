@@ -2,20 +2,20 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { cn } from "../../lib/utils";
+import { Button } from "./button";
 import Link from "next/link";
 
 interface HeroAction {
   label: string;
   href: string;
   variant?:
-  | "default"
-  | "destructive"
-  | "outline"
-  | "secondary"
-  | "ghost"
-  | "link";
+    | "default"
+    | "destructive"
+    | "outline"
+    | "secondary"
+    | "ghost"
+    | "link";
 }
 
 interface HeroProps extends Omit<React.HTMLAttributes<HTMLElement>, "title"> {
@@ -153,7 +153,9 @@ const Hero = React.forwardRef<HTMLElement, HeroProps>(
                     variant={action.variant || "default"}
                     asChild
                   >
-                    <Link href={action.href} className="cursor-pointer">{action.label}</Link>
+                    <Link href={action.href} className="cursor-pointer">
+                      {action.label}
+                    </Link>
                   </Button>
                 ))}
               </div>

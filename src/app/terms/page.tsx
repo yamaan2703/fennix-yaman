@@ -1,8 +1,7 @@
 "use client";
 
-import Terms from "@/app/pages/Terms";
+import Terms from "../pages/Terms";
 
 export default function TermsPage() {
   return <Terms />;
 }
-

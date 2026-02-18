@@ -1,4 +1,4 @@
-import { Hero } from "@/components/ui/hero";
+import { Hero } from "./ui/hero";
 
 function HeroDemo() {
   return (

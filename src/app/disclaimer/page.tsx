@@ -1,8 +1,7 @@
 "use client";
 
-import Disclaimer from "@/app/pages/Disclaimer";
+import Disclaimer from "../pages/Disclaimer";
 
 export default function DisclaimerPage() {
   return <Disclaimer />;
 }
-
